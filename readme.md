@@ -24,8 +24,9 @@ kubectl start --driver=docker
 ### Creating deployment configuration.
 
 **Create base64 value**
-echo -n admin | base64 # YWRtaW4=
-echo -n password | base64 # cGFzc3dvcmQ=
+
+- echo -n admin | base64 # YWRtaW4=
+- echo -n password | base64 # cGFzc3dvcmQ=
 
 **Create secrets**
 ```
@@ -99,8 +100,11 @@ kubectl get services
 minikube service mongo-express-service
 ```
 
+<img width="1268" alt="image" src="https://user-images.githubusercontent.com/31108317/219877593-b6d5a60f-477a-4771-9e33-9399ab594bcd.png">
 
-*TODO:*configuring a ingress ( ingress allow us to access the service without port.)
+
+
+*TODO:* configuring a ingress ( ingress allow us to access the service without port.)
 
 
 ### setting up active namespace.
